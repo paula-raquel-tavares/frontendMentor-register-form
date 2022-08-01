@@ -1,0 +1,126 @@
+*{
+    padding:0;
+    box-sizing: border-box;
+    margin: 0;
+}
+.content{
+    display:flex;
+    background-image:url(./images/bg-intro-desktop.png);
+    background-color:hsl(0, 100%, 74%);
+    align-items: center;
+    justify-content: center;
+    padding:100px;
+    height:100vh;
+}
+.area-text .title,
+.text{
+    font-family: 'Poppins', sans-serif;
+    color:#ffff;
+}
+.area-text .title{
+    font-size:30px;
+}
+.text{
+    margin-top:10px;
+    font-size:16px;    
+}
+
+.area-form .title-form, 
+.area-form button{
+    background-color:hsl(248, 32%, 49%);
+    color:#ffff;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size:13px;
+    padding:10px;
+    margin-bottom:30px;
+    border-radius:10px;
+    box-shadow:0 6px 0 #0000001c; 
+}
+.area-form button:hover{
+    background-color:#b1aeae;
+    cursor: pointer;
+}
+.title-form .word1{
+    font-size:13px;
+    font-family:sans-serif;
+    font-weight: 100;
+    color: lightcyan;
+    word-spacing:2px;
+}
+
+.area-form{
+    margin: 0 40px;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 6px 0px #0000001a;
+    border:none;
+}
+input{
+    border:1px solid #b1aeae;
+    border-radius:5px;
+    color:#3a3737;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size:13px;
+    padding: 10px;
+    margin-bottom:10px;
+    outline:0;
+}
+input:hover{
+    background-color:#c5c2c2;
+}
+.below-form{
+    font-family: 'Poppins', sans-serif;
+    font-size:10px;
+    color:#b1aeae;
+    margin-top: -30px;
+}
+.word2{
+    color:hsl(0, 84%, 63%);
+}
+.area-form button{
+    background-color:hsl(154, 59%, 51%);
+    color:white;
+    border: none;
+}
+@media(max-width:375px){
+    .content{
+        flex-direction:column;
+        width:100%; 
+        height: auto; 
+        padding:10px; 
+    }
+    .area-text .title, .text {
+        text-align: center;
+        font-size:small;        
+    }
+    .title-form .word1{
+        font-size:15px;
+    }
+    .area-form{
+        text-align: center;
+        margin: 0 10px;
+    }
+    .below-form{
+        margin: 0;
+    }
+    .area-form .title-form, .area-form button {
+        display: inline-block;
+        padding: 10px 30px;
+        margin: 5px;
+    }
+    fieldset{
+        padding: 12px;
+    }
+}
+
